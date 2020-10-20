@@ -83,6 +83,7 @@ body {
     height: 150vh;
     width: 100%;
     flex-direction: column;
+    background-color: #343342;
 }
 
 .knowledge-title {
@@ -110,6 +111,7 @@ body {
     width: 180px;
     border: 1px solid #DDD;
     border-radius: 10px;
+    box-shadow: 0px 0px 10px #191921;
 }
 
 .program:hover {
@@ -118,9 +120,70 @@ body {
     width: 180px;
     border: 2px solid #FFF;
     border-radius: 10px;
+    /* color: orangered; */
 }
 
 .program i {
     font-size: 5em;
     margin: 10px;
+}
+
+.program i:hover {
+    font-size: 5.2em;
+    /* color: orangered; */
+}
+
+.quote-container {
+    background-color: #ee5500;
+    height: 500px;
+    width: 100%;
+    padding: 50px;
+    color: #333;
+    /* color: #ccc; */
+}
+
+.quote-simbol {
+    font-size: 9em;
+    margin: 20px;
+}
+
+.quote-text {
+    margin: 30px 10px;
+    text-align: center;
+    font-size: 1.1em;
+}
+
+.proyects-container {
+    width: 100%;
+}
+
+.my-proyects-title {
+    color: #ddd;
+    font-size: 2.5em;
+    margin: 40px;
+}
+
+.proyect {
+    background-color: rgb(238, 238, 238, 0.4);
+    border: 1px solid #DDD;
+    border-radius: 15px;
+    width: 90%;
+    padding: 30px;
+    margin: 20px;
+    box-shadow: 0px 0px 20px rgb(0, 0, 0);
+}
+
+.proyect-image img {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.proyect-title {
+    color: #eee;
+    font-size: 1.2em;
+    font-weight: 400;
 }
