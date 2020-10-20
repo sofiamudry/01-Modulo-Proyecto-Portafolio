@@ -77,3 +77,49 @@ body {
     width: 100%;
 }
 
+.knowledge-container {
+    color: #EEE;
+    height: 150vh;
+    width: 100%;
+    flex-direction: column;
+}
+
+.knowledge-title {
+    font-size: 2.5em;
+}
+
+.knowledge-description {
+    width: 70%;
+    font-size: .9em;
+    text-align: center;
+    margin: 30px;
+}
+
+.program-container {
+    flex-wrap: wrap;
+    width: 80%;
+    height: 600px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.program {
+    background-color: rgb(238, 238, 238, 0.4);
+    height: 180px;
+    width: 180px;
+    border: 1px solid #DDD;
+    border-radius: 10px;
+}
+
+.program:hover {
+    background-color: rgb(238, 238, 238, 0.7);
+    height: 180px;
+    width: 180px;
+    border: 2px solid #FFF;
+    border-radius: 10px;
+}
+
+.program i {
+    font-size: 5em;
+    margin: 10px;
+}
