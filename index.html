@@ -26,7 +26,7 @@
         </section>
     </nav>
     <!-- termina navigation-bar -->
-    <main class="container">
+    <main class="center container">
         <!-- seccion hola! -->
         <section id="hi-container" class="center hi-container">
             <article class="center hi-subcontainer">
@@ -168,19 +168,19 @@
                     <div class="contact-me-media">
                         <a href="https://github.com/sofiamudry">
                             <i class="devicon-github-plain"></i>
-                            <h5 class="contact-me-media-text">sofiamudry</h5>
+                            <h5 class="contact-me-media-text"> sofiamudry</h5>
                         </a>
                     </div>
                     <div class="contact-me-media">
                         <a href="#">
                             <i class="devicon-linkedin-plain"></i>
-                            <h5 class="contact-me-media-text">SofiMudry</h5>
+                            <h5 class="contact-me-media-text"> SofiMudry</h5>
                         </a>
                     </div>
                     <div class="contact-me-media">
                         <a href="#">
                             <i class="devicon-google-plain"></i>
-                            <h5 class="contact-me-media-text">sofiamudry@gmail.com</h5>
+                            <h5 class="contact-me-media-text"> sofiamudry@gmail.com</h5>
                         </a>
                     </div>
                 </article>
@@ -189,27 +189,27 @@
             <!-- seccion escribime -->
             <article class="center write-me">
                 <h1 class="write-me-title">Escribime</h1>
-                <article class="center write-me-subcontainer">
-                    <div class="name">
-                        <h5 class="name-title">Nombre *</h5>
-                        <input type="text" placeholder="p. ej.: Ada">
+                <form class="center write-me-subcontainer">
+                    <div class="form-element name">
+                        <label for="userName">Nombre *</label>
+                        <input type="text" name="userName" id="name" placeholder="p. ej.: Ada" required>
                     </div>
-                    <div class="last-name">
-                        <h5 class="last-name-title">Apellido *</h5>
-                        <input type="text" placeholder="p. ej.: Lovelace">
+                    <div class="form-element last-name">
+                        <label for="userLastname">Apellido *</label>
+                        <input type="text" name="userLastname" id="userLastname" placeholder="p. ej.: Lovelace" required>
                     </div>
-                    <div class="mail">
-                        <h5 class="mail-title">Email *</h5>
-                        <input type="text" placeholder="p. ej.: adalovelace@gmail.com">
+                    <div class="form-element mail">
+                        <label for="userEmail">Email *</label>
+                        <input type="email" name="userEmail" id="userEmail" placeholder="p. ej.: adalovelace@gmail.com" required>
                     </div>
-                    <div class="message">
-                        <h5 class="message-title">Mensaje *</h5>
-                        <input type="text" placeholder="Escriba un mensaje aquí">
+                    <div class="form-element message">
+                        <label for="userMessage">Mensaje *</label>
+                        <textarea name="userMessage" id="userMessage" placeholder="Escriba un mensaje aquí" cols="38" rows="8" required></textarea>
                     </div>
-                </article>
-                <button class="send">
-                    Enviar
-                </button>
+                    <button class="send">
+                        Enviar
+                    </button>
+                </form>
             </article>
             <!-- termina seccion escribime -->
         </section>
