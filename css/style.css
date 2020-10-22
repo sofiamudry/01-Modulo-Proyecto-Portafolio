@@ -278,10 +278,6 @@ a {
     margin: 10px 10px 0px 0px;
 }
 
-.contact-me-media a h5:hover {
-    color: #ee5500;
-}
-
 .contact-me-media i{
     color: #ee5500;
     margin: 50px 5px 50px 0px;
@@ -291,14 +287,20 @@ a {
     font-size: 1.5em;
 }
 
-.contact-me-media i:hover {
-    background-color: #fff;
-    box-shadow: 0px 0px 20px rgb(0, 0, 0);
-}
-
 .contact-me-media-text{
     color: #ccc;
     font-weight: 400;
+}
+
+.contact-me-media a:hover i {
+    background-color: #fff;
+    box-shadow: 0px 0px 20px rgb(0, 0, 0);
+    color: orangered;
+    text-decoration: none;
+}
+
+.contact-me-media a:hover h5 {
+    color: #ee5500;
 }
 
 .write-me {
@@ -332,6 +334,7 @@ a {
     font-size: 1em;
     font-family: 'montserrat';
     border: none;
+    outline: none;
 }
 
 .form-element input:hover, textarea:hover {
@@ -340,6 +343,11 @@ a {
 
 .form-element input:focus, textarea:focus{
     border: 1px solid #ee5500;
+    border-radius: 20px;
+}
+
+.form-element input:valid, textarea:valid{
+    border: 3px solid #366936;
     border-radius: 20px;
 }
 
@@ -354,6 +362,7 @@ a {
     color: #fff;
     box-shadow: 0px 0px 20px rgb(0, 0, 0);
     font-weight: 400;
+    outline: none;
 }
 
 .send:hover {
@@ -416,6 +425,7 @@ a {
     box-shadow: 0px 0px 20px #fff;
     padding: 15px;
     border-radius: 25px;
+    background-color: #ee7700;
 }
 
 .love-title {
