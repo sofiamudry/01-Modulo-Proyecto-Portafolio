@@ -77,6 +77,7 @@ body {
     font-size: 1em;
     color: #DDD;
     font-weight: 400;
+    padding: 10px;
 }
 
 .what-i-do {
@@ -110,7 +111,7 @@ body {
 .knowledge-container {
     /* estilos generales */
     color: #EEE;
-    height: 130vh;
+    height: 120vh;
     width: 100%;
     flex-direction: column;
     background-color: #343342;
@@ -119,6 +120,8 @@ body {
 .knowledge-title {
     /* estilos de titulo */
     font-size: 2.5em;
+    margin: 25px 30px 0px 30px;
+    text-align: center;
 }
 
 .knowledge-description {
@@ -126,13 +129,13 @@ body {
     font-size: .9em;
     text-align: center;
     padding: 0px 25px;
-    margin: 30px 0px;
+    margin: 20px 0px;
 }
 
 .program-container {
     /* estilos del contenedor de programas  */
     flex-wrap: wrap; /* wrap para que se formen mas de una fila */
-    width: 100vw;
+    width: 100%;
     height: 600px;
     justify-content: center;
     align-items: center;
@@ -141,8 +144,8 @@ body {
 .program {
     /* estilos generales del programa que uso */
     background-color: rgb(238, 238, 238, 0.4);
-    height: 180px;
-    width: 180px;
+    height: 140px;
+    width: 140px;
     margin: 10px;
     border: 1px solid #DDD;
     border-radius: 10px;
@@ -206,6 +209,7 @@ body {
     color: #ddd;
     font-size: 2.5em;
     margin: 40px;
+    text-align: center;
 }
 
 .proyect {
@@ -273,7 +277,7 @@ a {
 .contact-me-media a{
     flex-direction: row;
     height: 30px; /* le di altura para el lugar que ocupa y me funcione el wrap */
-    margin: 10px 0px;
+    margin: 10px 10px 0px 0px;
 }
 
 .contact-me-media a h5:hover {
@@ -282,7 +286,7 @@ a {
 
 .contact-me-media i{
     color: #ee5500;
-    margin: 50px 20px 50px 0px;
+    margin: 50px 5px 50px 0px;
     height: 50px;
     width: 50px;
     border-radius: 50px;
@@ -424,6 +428,44 @@ a {
 
 /* empieza responsive */
 
-@media (max-width:360px) {
-    
+@media (max-width:375px) {
+    body {
+        font-size: .9rem;
+    }
+    .hi-title-description {
+        text-align: center;
+    }
+    #knowledge-container {
+        height: 150vh;
+    }
+    .knowledge-container {
+        font-size: .9em;
+        padding-top: 20px;
+    }
+    .quote-simbol {
+        font-size: 4em;
+    }
+}
+
+/* @media (max-width:375px), (min-height:700px), (max-height:900px) {
+    #knowledge-container {
+        height: 110vh;
+    }
+} */
+@media (max-width:414px) {
+    .hi-subcontainer {
+        margin-bottom: 70px;
+    }
+    .knowledge-container {
+        height: 100vh;
+    }
+    .contact-me-subcontainer {
+        height: 200px;
+    }
+    .contact-me-media {
+        flex-direction: column;
+    }
+    .quote-simbol {
+        font-size: 6em;
+    }
 }
