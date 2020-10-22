@@ -4,12 +4,14 @@
     box-sizing: border-box;
 }
 
+/* estilos base */
+
 /* estilos generales */
 
 body {
     font-family: 'montserrat', sans-serif;
     width: 100%;
-    /* background-color: #1f1430; */
+    /* background-color: #1f1430; prueba de color violeta  */
     background-color: #262532;
     font-size: 1rem;
 }
@@ -34,6 +36,7 @@ body {
 }
 
 .nav-bar {
+    /* display none porque no se ve en pantallas chicas */
     display: none;
 }
 
@@ -79,7 +82,6 @@ body {
     /* estilos de boton */
     padding: 15px 50px;
     border: none;
-    /* border: 1px solid #FFF; */
     border-radius: 30px;
     font-size: 1em;
     font-weight: 500;
@@ -151,7 +153,6 @@ body {
     width: 180px;
     border: 2px solid #FFF;
     border-radius: 10px;
-    /* color: orangered; */
 }
 
 .program i {
@@ -163,7 +164,6 @@ body {
 .program i:hover {
     /* estilos cuando hago hover en el icono del programa */
     font-size: 5.2em;
-    /* color: orangered; */
 }
 
 /* termina estilos de container knowledge */
@@ -177,7 +177,6 @@ body {
     width: 100%;
     padding: 50px;
     color: #333;
-    /* color: #ccc; */
 }
 
 .quote-simbol {
@@ -193,18 +192,21 @@ body {
 
 /* termina dimensionado de quote */
 
+/* dimensionado de proyects */
+
 .proyects-container {
     width: 100%;
 }
 
 .my-proyects-title {
+    /* estilo titulo */
     color: #ddd;
     font-size: 2.5em;
     margin: 40px;
 }
 
 .proyect {
-    /* background-color: rgb(238, 238, 238, 0.4); */
+    /* estilo del proyect general */
     border: 1px solid #DDD;
     border-radius: 15px;
     width: 90%;
@@ -218,6 +220,7 @@ body {
 }
 
 .proyect-image img {
+    /* estilo de imagen del proyecto */
     width: 100%;
     margin-bottom: 20px;
 }
@@ -227,17 +230,19 @@ a {
 }
 
 .proyect-title {
+    /* estilo titulo del proyecto */
     color: #eee;
     font-size: 1.2em;
     font-weight: 400;
 }
 
+/* termina dimensionado de proyects */
+
+/* dimensionado de contacto */
+
 .contact-container {
+    /* estilos en contenedor de contactos general (contact y write) */
     width: 90%;
-    /* color: #222;
-    background-color: rgb(238, 238, 238, 0.4);
-    border: 1px solid #DDD;
-    border-radius: 15px; */
     padding: 10px 20px 10px 10px;
     color: #cccccc;
     text-align: left;
@@ -245,9 +250,10 @@ a {
 }
 
 .contact-me-subcontainer {
+    /* estilos generales de contactame */
     width: 100%;
     height: 100px;
-    flex-wrap: wrap;
+    flex-wrap: wrap; /* agrego wrap para que se formen dos columnas */
     align-items: flex-start;
 }
 
@@ -262,10 +268,8 @@ a {
 }
 
 .contact-me-media a{
-    display: flex;
     flex-direction: row;
-    align-items: center;
-    height: 30px;
+    height: 30px; /* le di altura para el lugar que ocupa y me funcione el wrap */
     margin: 10px 0px;
 }
 
@@ -276,9 +280,6 @@ a {
 .contact-me-media i{
     color: #ee5500;
     margin: 50px 20px 50px 0px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     height: 50px;
     width: 50px;
     border-radius: 50px;
@@ -300,6 +301,7 @@ a {
 }
 
 .write-me-subcontainer {
+    /* estilos de fomulario escribime */
     width: 100%;
     align-items: flex-start;
 }
@@ -311,12 +313,14 @@ a {
 }
 
 .form-element {
+    /* estilos de los elementos del formulario */
     display: flex;
     flex-direction: column;
     width: 100%;
 }
 
 .form-element input, textarea {
+    /* estilos del imput del formulario */
     margin: 10px 0px;
     border-radius: 20px;
     padding: 10px 15px;
@@ -331,6 +335,7 @@ a {
 }
 
 .send {
+    /* estilos del boton del formulario */
     background-color: #ee5500;
     border: none;
     padding: 12px 40px;
@@ -355,6 +360,10 @@ a {
     color: #FFF;
 }
 
+/* termina dimensionado de contenedor de contacto */
+
+/* dimensionado de footer */
+
 .footer {
     background-color: #ee5500;
     height: 35vh;
@@ -364,14 +373,17 @@ a {
 }
 
 .footer-links {
+    /* display none porque no se ve en pantallas chicas */
     display: none;
 }
 
 .footer-media-links {
+    /* estilo general orden de logos de media */
     flex-direction: row;
 }
 
 .footer-link a {
+    /* estilos del logo */
     font-size: 1.2em;
     margin: 10px;
     height: 45px;
@@ -385,12 +397,12 @@ a {
 .footer-link a:hover {
     background-color: #ee5500;
     border: 2px solid #FFF;
-    /* box-shadow: 0px 0px 20px rgb(255, 255, 255); */
     box-shadow: unset;
     color: #FFF;
 }
 
 .love {
+    /* estilos de con amor  */
     margin-top: 40px;
     box-shadow: 0px 0px 20px #fff;
     padding: 15px;
@@ -400,3 +412,7 @@ a {
 .love-title {
     font-weight: 400;
 }
+
+/* termina estilos base */
+
+/* empieza responsive */
