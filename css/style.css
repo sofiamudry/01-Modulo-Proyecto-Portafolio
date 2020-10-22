@@ -10,7 +10,7 @@
 
 body {
     font-family: 'montserrat', sans-serif;
-    width: 100%;
+    width: 100vw;
     /* background-color: #1f1430; prueba de color violeta  */
     background-color: #262532;
     font-size: 1rem;
@@ -45,6 +45,7 @@ body {
 /* dimensionado de container hi y color de letra general */
 
 .hi-container {
+    width: 100vw;
     height: 100vh;  
     justify-content: space-between;
     color: #FFF;
@@ -121,18 +122,19 @@ body {
 }
 
 .knowledge-description {
-    width: 70%;
+    width: 100%;
     font-size: .9em;
     text-align: center;
+    padding: 0px 25px;
     margin: 30px 0px;
 }
 
 .program-container {
     /* estilos del contenedor de programas  */
     flex-wrap: wrap; /* wrap para que se formen mas de una fila */
-    width: 80%;
+    width: 100vw;
     height: 600px;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
 }
 
@@ -141,6 +143,7 @@ body {
     background-color: rgb(238, 238, 238, 0.4);
     height: 180px;
     width: 180px;
+    margin: 10px;
     border: 1px solid #DDD;
     border-radius: 10px;
     box-shadow: 0px 0px 10px #191921;
@@ -149,8 +152,8 @@ body {
 .program:hover {
     /* estilos cuando hago hover en el programa */
     background-color: rgb(238, 238, 238, 0.7);
-    height: 180px;
-    width: 180px;
+    height: 135px;
+    width: 135px;
     border: 2px solid #FFF;
     border-radius: 10px;
 }
@@ -329,6 +332,10 @@ a {
     border: none;
 }
 
+.form-element input:hover, textarea:hover {
+    box-shadow: 0px 0px 10px rgb(255, 255, 255, 0.7);
+}
+
 .form-element input:focus, textarea:focus{
     border: 1px solid #ee5500;
     border-radius: 20px;
@@ -416,3 +423,7 @@ a {
 /* termina estilos base */
 
 /* empieza responsive */
+
+@media (max-width:360px) {
+    
+}
