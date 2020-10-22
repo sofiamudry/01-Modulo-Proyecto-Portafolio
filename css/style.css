@@ -4,6 +4,8 @@
     box-sizing: border-box;
 }
 
+/* estilos generales */
+
 body {
     font-family: 'montserrat', sans-serif;
     width: 100%;
@@ -12,12 +14,20 @@ body {
     font-size: 1rem;
 }
 
+/* termina estilos generales */
+
+/* centralizado de objetos general (siempre esta clase primero para poder ser sobreescrita) */
+
 .center {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
+
+/* termina centralizado */
+
+/* dimensionado general */
 
 .container {
     width: 100%;
@@ -27,11 +37,19 @@ body {
     display: none;
 }
 
+/* termina dimesionado general */
+
+/* dimensionado de container hi y color de letra general */
+
 .hi-container {
-    height: 100vh;
+    height: 100vh;  
     justify-content: space-between;
     color: #FFF;
 }
+
+/* termina dimensionado de container hi y color de letra general */
+
+/* dimensionado de contenido boton y letras intro de container hi */
 
 .hi-subcontainer {
     height: 100%;
@@ -45,6 +63,7 @@ body {
 }
 
 .hi-title {
+    /* estilos de mi nombre */
     font-size: 3em;
     color: #FF5600;
     margin: 15px;
@@ -57,6 +76,7 @@ body {
 }
 
 .what-i-do {
+    /* estilos de boton */
     padding: 15px 50px;
     border: none;
     /* border: 1px solid #FFF; */
@@ -70,15 +90,22 @@ body {
 }
 
 .what-i-do a {
+    /* estilos de la letra de boton */
     text-decoration: none;
     color: #FFF;
 }
 
 .hi-icon img {
+    /* estilos de imagen de hi container */
     width: 100%;
 }
 
+/* termina dimensionado de contenido boton y letras intro de container hi */
+
+/* estilos container knowledge */
+
 .knowledge-container {
+    /* estilos generales */
     color: #EEE;
     height: 130vh;
     width: 100%;
@@ -87,6 +114,7 @@ body {
 }
 
 .knowledge-title {
+    /* estilos de titulo */
     font-size: 2.5em;
 }
 
@@ -94,11 +122,12 @@ body {
     width: 70%;
     font-size: .9em;
     text-align: center;
-    margin: 30px;
+    margin: 30px 0px;
 }
 
 .program-container {
-    flex-wrap: wrap;
+    /* estilos del contenedor de programas  */
+    flex-wrap: wrap; /* wrap para que se formen mas de una fila */
     width: 80%;
     height: 600px;
     justify-content: space-evenly;
@@ -106,6 +135,7 @@ body {
 }
 
 .program {
+    /* estilos generales del programa que uso */
     background-color: rgb(238, 238, 238, 0.4);
     height: 180px;
     width: 180px;
@@ -115,6 +145,7 @@ body {
 }
 
 .program:hover {
+    /* estilos cuando hago hover en el programa */
     background-color: rgb(238, 238, 238, 0.7);
     height: 180px;
     width: 180px;
@@ -124,16 +155,23 @@ body {
 }
 
 .program i {
+    /* estilos del icono del programa */
     font-size: 5em;
     margin: 10px;
 }
 
 .program i:hover {
+    /* estilos cuando hago hover en el icono del programa */
     font-size: 5.2em;
     /* color: orangered; */
 }
 
+/* termina estilos de container knowledge */
+
+/* dimensionado de quote */
+
 .quote-container {
+    /* estilos generales en el container quote */
     background-color: #ee5500;
     height: 500px;
     width: 100%;
@@ -143,8 +181,8 @@ body {
 }
 
 .quote-simbol {
+    /* estilos del icono de cita */
     font-size: 9em;
-    margin: 20px;
 }
 
 .quote-text {
@@ -152,6 +190,8 @@ body {
     text-align: center;
     font-size: 1.1em;
 }
+
+/* termina dimensionado de quote */
 
 .proyects-container {
     width: 100%;
@@ -201,10 +241,13 @@ a {
     padding: 10px 20px 10px 10px;
     color: #cccccc;
     text-align: left;
+    margin-bottom: 50px;
 }
 
 .contact-me-subcontainer {
     width: 100%;
+    height: 100px;
+    flex-wrap: wrap;
     align-items: flex-start;
 }
 
@@ -223,11 +266,28 @@ a {
     flex-direction: row;
     align-items: center;
     height: 30px;
+    margin: 10px 0px;
+}
+
+.contact-me-media a h5:hover {
+    color: #ee5500;
 }
 
 .contact-me-media i{
     color: #ee5500;
-    margin: 30px 20px 30px 0px;
+    margin: 50px 20px 50px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    font-size: 1.5em;
+}
+
+.contact-me-media i:hover {
+    background-color: #fff;
+    box-shadow: 0px 0px 20px rgb(0, 0, 0);
 }
 
 .contact-me-media-text{
@@ -262,8 +322,81 @@ a {
     padding: 10px 15px;
     font-size: 1em;
     font-family: 'montserrat';
+    border: none;
+}
+
+.form-element input:focus, textarea:focus{
+    border: 1px solid #ee5500;
+    border-radius: 20px;
+}
+
+.send {
+    background-color: #ee5500;
+    border: none;
+    padding: 12px 40px;
+    border-radius: 40px;
+    font-size: 1.1em;
+    margin: 15px 0px;
+    color: #fff;
+    box-shadow: 0px 0px 20px rgb(0, 0, 0);
+    font-weight: 400;
+}
+
+.send:hover {
+    background-color: #ee7700;
+    box-shadow: none;
+}
+
+.send:active {
+    background-color: #262532;
+    border: 3px solid #ee5500;
+    /* box-shadow: 0px 0px 20px rgb(255, 255, 255); */
+    box-shadow: unset;
+    color: #FFF;
 }
 
 .footer {
     background-color: #ee5500;
+    height: 35vh;
+    box-shadow: 0px 0px 20px rgb(0, 0, 0);
+    color: #fff;
+    font-weight: 400;
+}
+
+.footer-links {
+    display: none;
+}
+
+.footer-media-links {
+    flex-direction: row;
+}
+
+.footer-link a {
+    font-size: 1.2em;
+    margin: 10px;
+    height: 45px;
+    width: 45px;
+    border-radius: 30px;
+    background-color: white;
+    box-shadow: 0px 0px 20px rgb(0, 0, 0);
+    color: #ee5500;
+}
+
+.footer-link a:hover {
+    background-color: #ee5500;
+    border: 2px solid #FFF;
+    /* box-shadow: 0px 0px 20px rgb(255, 255, 255); */
+    box-shadow: unset;
+    color: #FFF;
+}
+
+.love {
+    margin-top: 40px;
+    box-shadow: 0px 0px 20px #fff;
+    padding: 15px;
+    border-radius: 25px;
+}
+
+.love-title {
+    font-weight: 400;
 }
