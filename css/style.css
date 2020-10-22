@@ -509,7 +509,7 @@ a {
     }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1024px) and (min-width:1300px) and (orientation: portrait) {
     .hi-subcontainer {
         font-size: 1.5em;
     }
