@@ -155,8 +155,6 @@ body {
 .program:hover {
     /* estilos cuando hago hover en el programa */
     background-color: rgb(238, 238, 238, 0.7);
-    height: 135px;
-    width: 135px;
     border: 2px solid #FFF;
     border-radius: 10px;
 }
@@ -508,5 +506,55 @@ a {
         color: #fff;
         font-size: .8em;
         margin: 30px 10px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .hi-subcontainer {
+        font-size: 1.5em;
+    }
+    #knowledge-container {
+        height: 70vh;
+    }
+    .knowledge-description {
+        font-size: 1.1em;
+    }
+    .program-container {
+        height: 800px;
+    }
+    .program {
+        margin-bottom: 35px;
+        height: 280px;
+        width: 280px;
+    }
+    .proyects-container {
+        height: 140vh;
+    }
+    .proyect {
+        text-align: center;
+        height: 420px;
+        width: 420px;
+    }
+    .footer-links {
+        font-size: 1.3em;
+    }
+    .contact-container {
+        background-color: rgba(255, 255, 255, 0.2);
+        border: 0.1px solid #FFF;
+        border-radius: 20px;
+        flex-direction: row;
+        color: #fff;
+        height: 100%;
+    }
+    .contact-me {
+        height: 700px;
+        justify-content: flex-start;
+        margin-left: 20px;
+    }
+    .contact-me-subcontainer {
+        height: 30%;
+    }
+    .send {
+        box-shadow: none;
     }
 }
