@@ -198,8 +198,13 @@ body {
 
 /* dimensionado de proyects */
 
+.my-proyects-container {
+    width: 100vw;
+}
+
 .proyects-container {
-    width: 100%;
+    width: 100vw;
+    flex-wrap: wrap;
 }
 
 .my-proyects-title {
@@ -212,11 +217,12 @@ body {
 
 .proyect {
     /* estilo del proyect general */
+    flex-wrap: wrap;
     border: 1px solid #DDD;
     border-radius: 15px;
     width: 90%;
     padding: 30px;
-    margin: 20px;
+    margin: 10px;
     box-shadow: 0px 0px 20px rgb(0, 0, 0);
 }
 
@@ -500,7 +506,7 @@ a {
     .proyects-container {
         display: flex;
         flex-wrap: wrap;
-        height: 140vh;
+        height: 110vh;
         width: 100vw;
         margin: 0;
     }
@@ -519,7 +525,7 @@ a {
     }
 }
 
-@media (min-width: 1024px) and (min-width:1300px) and (orientation: portrait) {
+@media (min-width: 1024px) {
     .hi-subcontainer {
         font-size: 1.5em;
     }
@@ -537,13 +543,18 @@ a {
         height: 280px;
         width: 280px;
     }
+    .my-proyects-container{
+        height: 90vh;
+    }
     .proyects-container {
-        height: 140vh;
+        flex-direction: row;
+        height: 70vh;
+        width: 100%;
     }
     .proyect {
         text-align: center;
-        height: 420px;
-        width: 420px;
+        height: 300px;
+        width: 300px;
     }
     .footer-links {
         font-size: 1.3em;
@@ -566,5 +577,63 @@ a {
     }
     .send {
         box-shadow: none;
+    }
+}
+
+@media (min-width: 1300px) {
+    body {
+        font-size: .8em;
+    }
+    .nav-bar {
+        display: flex;
+        position: fixed;
+        background-color: #ee5500;
+        height: 5vh;
+        width: 100%;
+        font-size: 1.2em;
+        justify-content: flex-end;
+        align-items: center;
+        padding: 30px;
+        overflow: inherit;
+    }
+    .hi-container {
+        flex-direction: row;
+        height: 100vh;
+    }
+    .hi-subcontainer{
+        display: flex;
+        justify-content: center;
+    }
+    .nav-title {
+        color: #fff;
+        margin: 0px 30px;
+    }
+    .nav-contact {
+        background-color: #262532;
+        padding: 15px;
+        border-radius: 30px;
+    }
+    #knowledge-container{
+        height: 120vh;
+        font-size: 1rem;
+    }
+    .knowledge-description {
+        width: 60vw;
+    }
+    .program-container{
+        height: 100vh;
+        width: 70vw;
+        font-size: 1.5rem;
+    }
+    .my-proyects-container{
+        height: 150vh;
+    }
+    .proyects-container{
+        height: 110vh;
+        width: 70vw;
+    }
+    .proyect {
+        height: 300px;
+        width: 300px;
     }
 }
