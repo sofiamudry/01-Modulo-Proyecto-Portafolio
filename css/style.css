@@ -614,26 +614,50 @@ a {
         border-radius: 30px;
     }
     #knowledge-container{
-        height: 120vh;
+        height: 150vh;
         font-size: 1rem;
     }
     .knowledge-description {
         width: 60vw;
     }
     .program-container{
-        height: 100vh;
+        height: 110vh;
         width: 70vw;
         font-size: 1.5rem;
     }
     .my-proyects-container{
-        height: 150vh;
+        height: 170vh;
+        font-size: 1.2rem;
     }
     .proyects-container{
-        height: 110vh;
+        height: 130vh;
         width: 70vw;
     }
     .proyect {
         height: 300px;
         width: 300px;
+    }
+    .contact-container {
+        font-size: .8rem;
+        height: 80vh;
+    }
+    .contact-me {
+        padding-right: 200px;
+        height: 80vh;
+    }
+    .contact-me-description{
+        font-size: .9rem;
+    }
+    .contact-me-subcontainer{
+        width: 40vw;
+        height: 100vh;
+    }
+    .contact-me-media {
+        margin: 20px 0px;
+        font-size: 1.2rem;
+    }
+    .write-me-subcontainer {
+        width: 30vw;
+        font-size: .8rem;
     }
 }
