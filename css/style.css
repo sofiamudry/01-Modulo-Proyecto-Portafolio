@@ -18,7 +18,7 @@ body {
 
 /* termina estilos generales */
 
-/* centralizado de objetos general (siempre esta clase primero para poder ser sobreescrita) */
+/* centralizado de objetos general (siempre está esta clase primero para poder ser sobreescrita) */
 
 .center {
     display: flex;
@@ -38,6 +38,10 @@ body {
 .nav-bar {
     /* display none porque no se ve en pantallas chicas */
     display: none;
+}
+
+.nav-bar-subcontainer {
+    flex-direction: row;
 }
 
 /* termina dimesionado general */
@@ -157,6 +161,9 @@ body {
     background-color: rgb(238, 238, 238, 0.7);
     border: 2px solid #FFF;
     border-radius: 10px;
+    font-size: 1.1em;
+    text-shadow: 2px 2px 2px rgb(0, 0, 0, 0.7);
+    /* text-shadow: 2px 2px 2px rgb(0, 0, 0); */
 }
 
 .program i {
@@ -165,10 +172,10 @@ body {
     margin: 10px;
 }
 
-.program i:hover {
+/* .program:hover h4 { */
     /* estilos cuando hago hover en el icono del programa */
-    font-size: 5.2em;
-}
+    /*text-shadow: 2px 2px 2px rgb(0, 0, 0);
+ } */
 
 /* termina estilos de container knowledge */
 
@@ -588,13 +595,52 @@ a {
         display: flex;
         position: fixed;
         background-color: #ee5500;
-        height: 5vh;
+        height: 12vh;
         width: 100%;
         font-size: 1.2em;
         justify-content: flex-end;
         align-items: center;
         padding: 30px;
         overflow: inherit;
+        box-shadow: 0px 0px 30px #53230a;
+    }
+    .nav-title {
+        color: #fff;
+        margin: 0px 30px;
+    }
+    .nav-item {
+        padding: 15px;
+    }
+    .nav-bar-subcontainer{
+        background-color: rgba(255, 255, 255, 0.25);
+        border-radius: 30px;
+        /* border: 2px solid rgb(255, 255, 255, 0.5); */
+        /* border: 2px solid rgb(38, 37, 50, 0.5); */
+        /* padding: 5px; */
+    }
+    .nav-hi {
+        border-radius: 30px 0px 0px 30px;
+    }
+    .nav-contact {
+        background-color: #262532;
+        padding: 15px;
+        border-radius: 30px;
+    }
+    .nav-item a:hover {
+        text-shadow: 2px 2px 2px #53230a;
+    }
+    .nav-bar-subcontainer:active .nav-contact {
+        background-color: rgb(255, 255, 255, 0.0);
+    }
+    .nav-hi:active, .nav-knowledge:active, .nav-proyect:active {
+        background-color: #262532;
+        padding: 15px;
+        border-radius: 30px;
+    }
+    .nav-hi:focus {
+        background-color: #262532;
+        padding: 15px;
+        border-radius: 30px;
     }
     .hi-container {
         flex-direction: row;
@@ -603,15 +649,6 @@ a {
     .hi-subcontainer{
         display: flex;
         justify-content: center;
-    }
-    .nav-title {
-        color: #fff;
-        margin: 0px 30px;
-    }
-    .nav-contact {
-        background-color: #262532;
-        padding: 15px;
-        border-radius: 30px;
     }
     #knowledge-container{
         height: 150vh;
