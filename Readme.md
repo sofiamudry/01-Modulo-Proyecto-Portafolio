@@ -2,7 +2,7 @@
 
 ### Este proyecto esta realizado para mostrar un ejemplo de como seria un portafolio para la entrega final del modulo 01 de Ada
 
-### Si quieres ver como me quedo puedes darle click a este [enlace](https://sofiamudry.github.io/01-modulo-proyecto-portafolio/) o puedes hacerlo desde [acá](https://practical-torvalds-23b93b.netlify.app/)
+### Si quieres ver como me quedo puedes darle click a este [enlace](https://sofiamudry.github.io/01-Modulo-Proyecto-Portafolio/) o puedes hacerlo desde [acá](https://practical-torvalds-23b93b.netlify.app/)
 
 <br>
 
