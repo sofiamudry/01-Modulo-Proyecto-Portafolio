@@ -193,6 +193,7 @@ body {
 .quote-simbol {
     /* estilos del icono de cita */
     font-size: 9em;
+    text-shadow: 1px 1px 1px #fff;
 }
 
 .quote-text {
@@ -696,5 +697,10 @@ a {
     .write-me-subcontainer {
         width: 30vw;
         font-size: .8rem;
+    }
+    #my-projects-container:focus .nav-proyect {
+        background-color: #262532;
+        padding: 15px;
+        border-radius: 30px;
     }
 }
