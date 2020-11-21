@@ -52,7 +52,7 @@ body {
     border-radius: 30px;
 }
 
-/* cambios */
+/* cambios segunda etapa */
 
 
 
@@ -70,32 +70,53 @@ body {
     overflow: inherit;
     box-shadow: 0px 0px 30px #53230a;
 }
+
 .nav-title {
     color: #fff;
     margin: 0px 30px;
 }
+
 .nav-item {
     padding: 15px;
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+    outline: none;
 }
+
 .nav-bar-subcontainer{
     background-color: rgba(255, 255, 255, 0.25);
     border-radius: 30px;
 }
+
 .nav-hi {
     border-radius: 30px 0px 0px 30px;
 }
+
 .nav-contact {
     background-color: #262532;
     padding: 15px;
     border-radius: 30px;
 }
+
 .nav-item a:hover {
     text-shadow: 2px 2px 2px #53230a;
 }
+
 .nav-bar-subcontainer:active .nav-contact {
     background-color: rgb(255, 255, 255, 0.0);
 }
+
+.nav-hi:focus ~ .nav-contact, .nav-knowledge:focus ~.nav-contact, .nav-proyect:focus ~ .nav-contact {
+    background-color: rgb(255, 255, 255, 0.0);
+}
+
 .nav-hi:active, .nav-knowledge:active, .nav-proyect:active {
+    background-color: #262532;
+    padding: 15px;
+    border-radius: 30px;
+}
+
+.nav-hi:focus, .nav-knowledge:focus, .nav-proyect:focus {
     background-color: #262532;
     padding: 15px;
     border-radius: 30px;
@@ -137,6 +158,7 @@ body {
     font-size: 3em;
     color: #FF5600;
     margin: 15px;
+    text-shadow: 2px 2px 5px #000;
 }
 
 .hi-title-description {
@@ -311,6 +333,7 @@ body {
     padding: 30px;
     margin: 10px;
     box-shadow: 0px 0px 20px rgb(0, 0, 0);
+    transition: transform 2s, background-color 2s;
 }
 
 .proyect:hover {
@@ -321,6 +344,7 @@ body {
     /* estilo de imagen del proyecto */
     width: 100%;
     margin-bottom: 20px;
+    transition: transform 2s;
 }
 
 a {
@@ -332,6 +356,49 @@ a {
     color: #eee;
     font-size: 1.2em;
     font-weight: 400;
+}
+
+/* proyecto portfolio */
+
+.project-portfolio .project-image, project-portfolio .project-title {
+    position: relative;
+}
+
+.portfolio-description {
+    /* display: none;
+    visibility: hidden; */
+    position: absolute;
+    width: 10%;
+    color: #fff;
+    font-size: .8em;
+    transform: rotatey(90deg);
+    transition: transform;
+}
+
+.proyect:hover .portfolio-description {
+    transform: rotatey(0deg);
+    transition-duration: .5s;
+    transition-delay: .5s;
+}
+
+.proyect:hover .proyect-title-portfolio {
+    transform: rotatey(90deg);
+    transition-duration: .5s;
+}
+
+.proyect:hover .portafolio-image {
+    transform: rotatey(90deg);
+    transition-duration: .5s;
+}
+
+.proyect-portfolio:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    transition-duration: 1s;
+    transition-delay: .2s;
+}
+
+.color-link {
+    color: #ee5500;
 }
 
 /* termina dimensionado de proyects */
