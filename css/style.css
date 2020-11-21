@@ -39,6 +39,7 @@ body {
 .nav-bar {
     /* display none porque no se ve en pantallas chicas */
     display: none;
+    visibility: hidden;
 }
 
 .nav-bar-subcontainer {
@@ -693,6 +694,10 @@ a {
 @media (min-width: 1300px) {
     body {
         font-size: .8em;
+    }
+    .nav-bar{
+        display: flex;
+        visibility: visible;
     }
     .hi-container {
         flex-direction: row;
