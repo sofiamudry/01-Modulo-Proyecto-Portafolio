@@ -25,7 +25,7 @@
 
  ### Este debería ser el resultado final de tu instalación 
 
- ![imagen](./images/sofiamudry-Proyecto-Portafolio.png)
+ ![imagen](./images/sofiamudry-Proyecto-Portafolio-02.png)
 
  <br>
 
