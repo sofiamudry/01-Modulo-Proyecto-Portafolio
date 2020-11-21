@@ -45,6 +45,12 @@ body {
     flex-direction: row;
 }
 
+.nav-title:focus .nav-item {
+    background-color: #262532;
+    padding: 15px;
+    border-radius: 30px;
+}
+
 /* termina dimesionado general */
 
 /* dimensionado de container hi y color de letra general */

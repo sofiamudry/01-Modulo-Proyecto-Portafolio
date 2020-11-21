@@ -1,6 +1,6 @@
 # Portafolio de Ada
 
-### Este proyecto esta realizado para mostrar un ejemplo de como seria un portafolio para la entrega final del modulo 01 de Ada
+### Este proyecto esta fue realizado reforzar los conocimientos en el Modulo 01 - HTML Y CSS - del curso Frontend de Ada.
 
 ### Si quieres ver como me quedo puedes darle click a este [enlace](https://sofiamudry.github.io/01-Modulo-Proyecto-Portafolio/) o puedes hacerlo desde [acá](https://practical-torvalds-23b93b.netlify.app/)
 
@@ -10,7 +10,7 @@
 
 ### Si quieres tener el código en tu computadora, deberas de seguir estos passos en tu terminal.
 
- - Ir a [Repositorio](https://github.com/sofiamudry/01-Modulo-Proyecto-Portafolio)
+ - Ir al [Repositorio](https://github.com/sofiamudry/01-Modulo-Proyecto-Portafolio)
  - Darle click al botón de forkear
  - Darle click al botón de Code 
  - Copiar la url
@@ -31,7 +31,6 @@
 
  ***
 
- ### Este portafolio fue desarrollado para las chicas de la cursada 6 de Ada, Agradezco a [Leydy](url) la ayuda proporsionada!
+ ### Este portafolio fue desarrollado por Maria Sofía Mudry Lagrace, Agradezco a mis[compañeras](url) de la 6ta generación de Ada por la ayuda proporsionada!
 
 ### De Sofi con 🧡
-Para Ustedes!
