@@ -358,6 +358,27 @@ a {
     font-weight: 400;
 }
 
+.comming-soon {
+    color: #ddd;
+    font-size: 1em;
+}
+
+.icono-comming-soon{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 7rem;
+    position: relative;
+    margin: 15px;
+}
+
+.icono-comming-soon:hover {
+    color: #fff;
+    text-shadow: 2px 2px 5px #000;
+}
+
+.proyect:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
 /* proyecto portfolio */
 
 .project-portfolio .project-image, project-portfolio .project-title {
@@ -418,6 +439,7 @@ a {
 .contact-subcontainer {
     flex-direction: row;
     height: 200vh;
+    width: 95%;
     /* background-color: seagreen; */
 }
 
@@ -782,7 +804,7 @@ a {
         width: 60vw;
     }
     .quote-simbol{
-        font-size: 9rem;
+        font-size: 5rem;
     }
     .program-container{
         height: 110vh;
@@ -811,7 +833,7 @@ a {
         width: 80%;
     }
     .contact-me-title{
-        margin: 60px 0px 20px 50px ;
+        margin: 30px 0px 20px 50px ;
     }
     .contact-me {
         padding-right: 100px;
@@ -846,5 +868,15 @@ a {
         background-color: #262532;
         padding: 15px;
         border-radius: 30px;
+    }
+    .footer-links {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 60%;
+    }
+    .footer-links a {
+        color: #fff;
+        margin: 20px 10px;
     }
 }
