@@ -253,14 +253,26 @@ body {
 
 .quote-simbol {
     /* estilos del icono de cita */
-    font-size: 9em;
+    font-size: 9rem;
     text-shadow: 1px 1px 1px #fff;
 }
 
 .quote-text {
     margin: 30px 10px;
     text-align: center;
-    font-size: 1.1em;
+    font-size: 2.5em;
+    transform:rotatey(270deg);
+}
+
+.quote-author {
+    font-size: 1.4rem;
+}
+
+.quote-text {
+    transform: rotatey(0deg);
+    transition-duration: 2s;
+    /* transform: rotatey(90deg) 5s;
+    -webkit-transform:rotatey(90deg) 5s; */
 }
 
 /* termina dimensionado de quote */
@@ -398,7 +410,7 @@ a {
     transition: transform;
 }
 
-.write-me-title:hover {
+.write-me:hover .write-me-title {
     transform: rotatey(360deg);
     transition-duration: 1.5s;
 }
@@ -678,6 +690,9 @@ a {
     }
     .knowledge-description {
         width: 60vw;
+    }
+    .quote-simbol{
+        font-size: 9rem;
     }
     .program-container{
         height: 110vh;
