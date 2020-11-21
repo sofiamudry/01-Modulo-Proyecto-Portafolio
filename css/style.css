@@ -271,8 +271,13 @@ body {
 .quote-text {
     transform: rotatey(0deg);
     transition-duration: 2s;
-    /* transform: rotatey(90deg) 5s;
-    -webkit-transform:rotatey(90deg) 5s; */
+    transform: rotatey(90deg) 5s;
+    -webkit-transform:rotatey(90deg) 5s;
+}
+
+.quote-container:hover .quote-text {
+    transform: rotatey(0deg);
+    transition-duration: 2s;
 }
 
 /* termina dimensionado de quote */
@@ -350,9 +355,17 @@ a {
 }
 
 .contact-me-title {
-    width: 100%;
+    display: flex;
+    align-self: flex-start;
     font-size: 2.3em;
-    margin: 20px;
+    margin: 20px 0px 20px 50px;
+    transition: transform;
+    background-color: seagreen;
+}
+
+.contact-me:hover .contact-me-title {
+    transform: rotatey(360deg);
+    transition-duration: 1.5s;
 }
 
 .contact-me-description {
@@ -377,6 +390,7 @@ a {
 .contact-me-media-text{
     color: #ccc;
     font-weight: 400;
+    margin-left: 10px;
 }
 
 .contact-me-media a:hover i {
@@ -403,9 +417,7 @@ a {
 .write-me-title {
     display: flex;
     align-self: flex-start;
-    
     font-size: 2.3em;
-    /* width: 100%; */
     margin: 30px 0px;
     transition: transform;
 }
@@ -714,25 +726,36 @@ a {
     .contact-container {
         font-size: .8rem;
         height: 80vh;
+        width: 80%;
     }
     .contact-me {
-        padding-right: 200px;
+        padding-right: 100px;
         height: 80vh;
+        width: 50%;
     }
     .contact-me-description{
+        width: 100%;
+        margin-left: 110px;
         font-size: .9rem;
     }
     .contact-me-subcontainer{
-        width: 40vw;
+        width: 80%;
         height: 100vh;
     }
     .contact-me-media {
-        margin: 20px 0px;
-        font-size: 1.2rem;
+        margin: 15px 0px;
+        font-size: 1.3rem;
+    }
+    .write-me{
+        width: 50%;
+    }
+    .write-me-title{
+        margin-left: 52px;
     }
     .write-me-subcontainer {
-        width: 30vw;
+        width: 80%;
         font-size: .8rem;
+        margin-bottom: 20px;
     }
     #my-projects-container:focus .nav-proyect {
         background-color: #262532;
