@@ -343,7 +343,14 @@ a {
     padding: 10px 20px 10px 10px;
     color: #cccccc;
     text-align: left;
-    margin-bottom: 50px;
+    margin-bottom: 100px;
+    height: 140vh;
+}
+
+.contact-subcontainer {
+    flex-direction: row;
+    height: 103vh;
+    /* background-color: seagreen; */
 }
 
 .contact-me-subcontainer {
@@ -360,7 +367,6 @@ a {
     font-size: 2.3em;
     margin: 20px 0px 20px 50px;
     transition: transform;
-    background-color: seagreen;
 }
 
 .contact-me:hover .contact-me-title {
@@ -725,12 +731,13 @@ a {
     }
     .contact-container {
         font-size: .8rem;
+        margin-top: 20vh;
         height: 80vh;
         width: 80%;
     }
     .contact-me {
         padding-right: 100px;
-        height: 80vh;
+        height: 75vh;
         width: 50%;
     }
     .contact-me-description{
